@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: rgb(92, 84, 82);
+  width: 390px;
+  height: 595px;
+  margin: auto;
+  margin-top: 2%;
+  border-radius: 10px;
+  padding-top: 1%;
+}
+
+h1 {
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(238, 239, 240);
+  font-size: 45px;
+  text-shadow: 2px 1px 2px rgb(22, 20, 92);
+  letter-spacing: 1px;
+  margin-top: 2%;
+  background-color: rgb(92, 91, 92);
+  padding: 10px;
+}
+
+h1:hover {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+.display {
+  background-color: rgba(3, 3, 3, 0.8);
+  border-radius: 10px;
+  width: 95%;
+  height: 80%;
+  text-align: end;
+  font-size: 1.15cm;
+  grid-column: 1 / span 4;
+  grid-row: 1/2;
+  padding: 2%;
+  color: rgb(255, 255, 255);
+}
+
+.display2 {
+  background-color: rgb(146, 146, 146, 0.8);
+  border: 0;
+  width: 95%;
+  height: 20px;
+  text-align: end;
+  font-size: 0.7cm;
+  grid-column: 1 / span 4;
+  grid-row: 2/2;
+  padding: 2%;
+  color: rgb(70, 70, 70);
+}
+
+.container {
+  width: 330px;
+  height: 530px;
+  border-radius: 10px;
+  border: 10px solid rgb(129, 145, 173);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px 40px 75px 75px 75px 75px 75px;
+  gap: 1px;
+  background-color: rgb(129, 145, 173);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+  margin-top: 5%;
+}
+
+button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  background-color: rgba(191, 215, 241, 0.486);
+  color: rgb(33, 34, 34);
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: rgb(11, 23, 65);
+  width: 60px;
+  height: 60px;
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.num {
+  background-color: rgb(255, 255, 255);
+}
+
+.oper {
+  color: rgb(16, 139, 0);
+}
+
+
+@media (max-width:360px){
+  h1 {
+    font-size: 30px;
+  }
+
+  main {
+    width: 310px;
+    height: 530px;    
+  }
+  .container {
+    width: 270px;
+    height: 490px;
+    margin-top: 2%;
+    gap: 0.5px;
+  }
+  .oper {
+    color: rgb(139, 0, 111);
+  }
+  
+  .display {
+    height: 60%;
+  }
+
+
+}
